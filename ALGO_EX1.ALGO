@@ -1,0 +1,64 @@
+
+FUNCTION estBissextile(année) 
+
+BEGIN
+    
+    if année % 4=0 then
+    if année % 100 =0 then
+    if année % 400 = 0 then
+
+    return true ;
+    else 
+    return false;
+    
+    end if 
+    else 
+    return true
+    end if 
+
+    else 
+    return false 
+    end if 
+
+année<-2024
+
+estBissextile(année) then
+
+write ("L année " + annee + " est bissextile." )
+else if 
+write("L année " + annee + " n'est pas bissextile.")
+
+end
+
+END  
+
+
+
+//.......................algo tarification billet.............
+
+ALGORITHM tarificationBillets()
+VAR
+prix=0
+    //demander a l'utilisateur son age 
+    write("Entrer votre age")
+    read("age")
+BEGIN
+    // Déterminer le prix du billet en fonction de l'âge
+    if age<=12 then
+    prix = 10
+
+else if age>=13 ET age <=17 then 
+
+prix=15
+
+else
+
+prix =20
+
+
+    
+
+END
+
+
+//
